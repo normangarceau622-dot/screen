@@ -7,7 +7,7 @@ using System.Security.Principal;
 using System.Text;
 
 namespace a {
-    class b {
+    public class b {
         static string c(byte[] d) {
             byte[] e = new byte[d.Length];
             for (int f = 0; f < d.Length; f++) e[f] = (byte)(d[f] ^ 0xAB);
